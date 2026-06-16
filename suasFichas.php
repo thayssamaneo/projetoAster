@@ -177,7 +177,7 @@ try {
     </div>
     <nav class="flex items-center gap-4">
         <a href="criarFicha.php" class="bg-secondary-container text-primary-container px-4 py-2 font-bold hover:bg-ethereal-gold transition-all">Criar Nova Ficha</a>
-        <a href="logout.php" class="text-ethereal-gold underline">Sair</a>
+        <a href="index.php" class="text-ethereal-gold underline">Sair</a>
     </nav>
 </header>
 
