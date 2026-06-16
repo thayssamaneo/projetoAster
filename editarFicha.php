@@ -329,7 +329,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="flex items-center gap-4 p-3 bg-surface-container-low/30 border border-primary/10 rounded-sm">
         <img src="<?php echo htmlspecialchars($dados['aparencia'] ?? 'img/default_avatar.png'); ?>" alt="Aparência Actual" class="w-24 h-24 object-cover border-2 border-primary/20 rounded-sm shadow-md">
         <div>
-            <p class="text-xs font-bold text-primary">Retrato Actual</p>
+            <p class="text-xs font-bold text-primary">Retrato Atual</p>
             <p class="text-xs text-ink-deep/60 italic">Para alterar o visual deste personagem, selecione um novo arquivo abaixo.</p>
         </div>
     </div>
