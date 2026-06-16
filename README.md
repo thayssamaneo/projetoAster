@@ -229,4 +229,13 @@ Os requisitos funcionais descrevem as interações que a aplicação web deve pe
 
 ### 5.1 Clonando o repositório
 
-``
+1. copiar o link `<https://github.com/thayssamaneo/projetoAster.git>`\
+2. utilizar o comando `"git clone https://github.com/thayssamaneo/projetoAster.git" no terminal`
+
+### 5.2 Realizar restore do banco de dados
+
+1. Utilize o comando `psql -U usuario -d nome_do_banco -f C:\usuario\dowloads\backup_fichas_aster.sql` no terminal
+
+### 5.3 Inicializar o servidor php
+
+1. Utilizar o comando `php -S localhost:5000` no terminal
