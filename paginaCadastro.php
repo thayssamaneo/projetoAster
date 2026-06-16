@@ -1,17 +1,16 @@
 <?php 
-// 1. Inclui o arquivo de conexão com o PostgreSQL
+// Inclui o arquivo de conexão com o PostgreSQL
 include("conexao.php");
 
-$mensagem = ""; // Variável para exibir feedback de sucesso
-$erro = "";     // Variável para exibir mensagens de erro
+$mensagem = ""; 
+$erro = "";     
 
 if (isset($_POST["nomeUsuario"]) && isset($_POST["senha"])) {
     $usuario_digitado = trim($_POST['nomeUsuario']);
-    // Criptografia idêntica à usada na checagem do login
     $senha_criptografada = password_hash($_POST['senha'], PASSWORD_DEFAULT); 
 
     try {
-        // Passo 1: Verificar se o usuário já existe no pergaminho de registros
+        // Verificar se o usuário já existe nos registros
         $sql_busca = "SELECT idUsuarios FROM usuarios WHERE nomeUsuario = :usuario";
         $stmt_busca = $conexao->prepare($sql_busca);
         $stmt_busca->bindValue(':usuario', $usuario_digitado);
@@ -20,7 +19,7 @@ if (isset($_POST["nomeUsuario"]) && isset($_POST["senha"])) {
         if ($stmt_busca->rowCount() > 0) {
             $erro = "Este nome de usuário já foi reivindicado por outro aventureiro.";
         } else {
-            // Passo 2: Se não existe, podemos inserir o novo usuário
+            // Se não existe, inserir o novo usuário
             $sql_inserir = "INSERT INTO usuarios (nomeUsuario, senha) VALUES (:usuario, :senha)";
             $stmt_inserir = $conexao->prepare($sql_inserir);
             $stmt_inserir->bindValue(':usuario', $usuario_digitado);
@@ -28,8 +27,7 @@ if (isset($_POST["nomeUsuario"]) && isset($_POST["senha"])) {
             
             if ($stmt_inserir->execute()) {
                 $mensagem = "Cadastro realizado com sucesso! Você já pode entrar.";
-                // Opcional: Se quiser redirecionar direto para o login após 3 segundos:
-                // header("Refresh: 3; url=login.php");
+                header("Refresh: 3; url=paginaLogin.php");
             } else {
                 $erro = "Falha ao salvar.";
             }
