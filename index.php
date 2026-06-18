@@ -169,7 +169,7 @@
 <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-12">
 <!-- Biblioteca de Áster -->
 <div class="group bg-[#C0B499]/30 p-8 border border-tertiary/10 rounded-sm hover:border-tertiary/40 transition-all duration-300 cursor-pointer flex flex-col items-center text-center">
-<a href="#">
+<a href="https://drive.google.com/drive/folders/1H7hwY-QM387y13BodV3NY_o049mTfj3E">
 <div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
 </div>
@@ -179,7 +179,7 @@
 </div>
 <!-- Manual do Mestre -->
 <div class="group bg-[#C0B499]/30 p-8 border border-tertiary/10 rounded-sm hover:border-tertiary/40 transition-all duration-300 cursor-pointer flex flex-col items-center text-center">
-<a href="#">
+<a href="https://drive.google.com/drive/folders/1M7yPAXbji06FMHR28Sr7HtRd7f8eVJtD">
 <div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined text-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">theater_comedy</span>
 </div>
