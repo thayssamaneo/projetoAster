@@ -468,7 +468,7 @@ foreach ($skills_map as $label => $column_name) {
 <div class="flex justify-center pt-12 pb-8">
 <button class="bg-primary-container text-secondary-container px-12 py-4 font-label-caps text-label-caps tracking-[0.2em] uppercase rounded shadow-lg border border-ethereal-gold/30 hover:scale-105 hover:shadow-[0_0_20px_rgba(238,197,84,0.4)] transition-all flex items-center gap-4 active:scale-95" type="submit">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">save</span>
-                        Selar Manuscrito
+                        Salvar ficha
                     </button>
 </div>
 </form>
