@@ -234,7 +234,7 @@ Os requisitos funcionais descrevem as interações que a aplicação web deve pe
 
 ### 5.2 Realizar restore do banco de dados
 
-1. Utilize o comando `psql -U usuario -d nome_do_banco -f C:\usuario\dowloads\backup_fichas_aster.sql` no terminal
+1. Utilize o comando `psql -U usuario -d fichasaster -f C:\usuario\dowloads\backup_fichas_aster.sql` no terminal
 
 ### 5.3 Inicializar o servidor php
 
